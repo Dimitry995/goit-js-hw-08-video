@@ -41,7 +41,7 @@ function makeGalleryMarkup(galleryItems) {
     .join('');
 }
 function getRightClick(event) {
-  evt.preventDefault();
+  event.preventDefault();
   const targetClick = event.target;
   if (!targetClick.classList.contains('gallery__image')) {
     return;
